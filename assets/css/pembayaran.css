@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f5f6fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CARD */
+
+.payment-card{
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* HEADER */
+
+.header-payment{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header-payment h2{
+    font-weight: 700;
+}
+
+.btn-kembali{
+    background: orange;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/* NOMOR */
+
+.nomor-box{
+    background: #fff4e6;
+    padding: 18px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.nomor-box span{
+    color: #ff6600;
+    font-weight: 700;
+}
+
+/* TOTAL */
+
+.total-box{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.total-box h1{
+    font-size: 50px;
+    color: #ff6600;
+    font-weight: 800;
+}
+
+.total-box p{
+    color: #666;
+}
+
+/* METODE */
+
+.metode-box{
+    background: #f8f9fa;
+    padding: 18px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+/* QRIS */
+
+.qris-box{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.qris-box img{
+    width: 250px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+/* STATUS */
+
+.status-box{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.paid{
+    background: #28a745;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+
+.unpaid{
+    background: #dc3545;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+
+/* BUTTON */
+
+.btn-bayar{
+    width: 100%;
+    border: none;
+    background: linear-gradient(135deg,#ff8c00,#ff6600);
+    color: white;
+    padding: 16px;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .payment-card{
+        padding: 25px;
+    }
+
+    .header-payment{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .total-box h1{
+        font-size: 38px;
+    }
+
+    .qris-box img{
+        width: 100%;
+    }
+
+}

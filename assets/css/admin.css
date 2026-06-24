@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6f9;
+}
+
+/* WRAPPER */
+
+.wrapper{
+    display: flex;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width: 260px;
+    min-height: 100vh;
+    background: linear-gradient(180deg,#ff8c00,#ff6600);
+    padding: 30px 20px;
+}
+
+.logo{
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li{
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 14px 18px;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active{
+    background: rgba(255,255,255,0.2);
+}
+
+/* CONTENT */
+
+.content{
+    flex: 1;
+    padding: 35px;
+}
+
+/* HEADER */
+
+.header{
+    margin-bottom: 30px;
+}
+
+.header h2{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.header p{
+    color: #666;
+}
+
+/* CARD */
+
+.card-dashboard{
+    background: white;
+    padding: 25px;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.card-dashboard small{
+    color: #777;
+    font-size: 14px;
+}
+
+.card-dashboard h3{
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ff6600;
+}
+
+/* TABLE */
+
+.table-box{
+    background: white;
+    border-radius: 22px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.table-header{
+    margin-bottom: 20px;
+}
+
+.table-header h4{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.table th{
+    color: #666;
+    font-size: 14px;
+}
+
+.table td{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* STATUS */
+
+.paid{
+    background: #28a745;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.unpaid{
+    background: #dc3545;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:991px){
+
+    .wrapper{
+        flex-direction: column;
+    }
+
+    .sidebar{
+        width: 100%;
+        min-height: auto;
+    }
+
+    .content{
+        padding: 20px;
+    }
+
+}

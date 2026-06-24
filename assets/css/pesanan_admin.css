@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f4f6f9;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* WRAPPER */
+.wrapper{
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width: 260px;
+    min-height: 100vh;
+    background: linear-gradient(180deg,#ff8c00,#ff6600);
+    padding: 30px 20px;
+}
+
+.logo{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li{
+    margin-bottom: 12px;
+}
+
+.sidebar ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 18px;
+    border-radius: 12px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active{
+    background: rgba(255,255,255,0.2);
+}
+
+/* CONTENT */
+.content{
+    flex: 1;
+    padding: 30px;
+}
+
+/* HEADER */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header h2{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.header p{
+    color: #666;
+    font-size: 14px;
+}
+
+/* TABLE BOX */
+.table-box{
+    background: white;
+    border-radius: 22px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* TABLE */
+.table th{
+    font-size: 14px;
+    color: #666;
+    border-bottom: 1px solid #eee;
+    padding: 12px;
+}
+
+.table td{
+    font-size: 14px;
+    vertical-align: middle;
+    padding: 12px;
+}
+
+/* HOVER ROW */
+.table tbody tr:hover{
+    background: #f9f9f9;
+}
+
+/* BUTTON UMUM */
+.btn{
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* DETAIL BUTTON */
+.btn-info{
+    background: #17a2b8;
+    color: white;
+    border: none;
+}
+
+/* UPDATE BUTTON */
+.btn-primary{
+    background: linear-gradient(135deg,#ff8c00,#ff6600);
+    color: white;
+    border: none;
+}
+
+/* BADGE STYLE */
+.badge{
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* RESPONSIVE */
+@media(max-width:991px){
+
+    .wrapper{
+        flex-direction: column;
+    }
+
+    .sidebar{
+        width: 100%;
+        min-height: auto;
+    }
+
+    .content{
+        padding: 20px;
+    }
+
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+}
